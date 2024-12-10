@@ -81,7 +81,6 @@ Dropped sequence: EMPLOYEES_SEQ
 ----------------------------------------------------------
 TABLE EMPLOYEES has maximum id: 102
 ----------------------------------------------------------
-Dropped sequence: EMPLOYEES_SEQ
 SEQUENCE EMPLOYEES_SEQ CREATED WITH START VALUE: 103
 TRIGGER : EMPLOYEES_TGR CREATED ON TABLE EMPLOYEES AND PAIRED WITH : EMPLOYEES_SEQ
 Now the EMP_ID column in the table EMPLOYEES acts as an identity column.
