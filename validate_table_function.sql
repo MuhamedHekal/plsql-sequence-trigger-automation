@@ -27,10 +27,8 @@ BEGIN
     INTO pk_dt
     FROM USER_TAB_COLS
     WHERE TABLE_NAME = P_TABLE_NAME AND COLUMN_NAME = pk_col_name;
-    IF pk_dt = 'NUMBER' THEN 
-        return TRUE ;
-    ELSE
-        RETURN FALSE;
+    IF pk_dt != 'NUMBER' THEN 
+        return FALSE ;
     END IF;
 
     return TRUE;

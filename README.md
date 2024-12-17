@@ -32,7 +32,6 @@ The solution dynamically drops and recreates sequences and triggers in a loop us
 | **File Name**                | **Description**                                                                                  |
 |------------------------------|--------------------------------------------------------------------------------------------------|
 | `Anonymous_block.sql`        | Main PL/SQL script that performs the sequence and trigger creation in a loop for all tables.     |
-| `Check_seq.sql`              | Validates the existence of a sequence in the schema.                                             |
 | `get_max_id.sql`             | Returns the maximum ID value from the primary key column of a table.                            |
 | `GET_SEQUENCE.sql`           | Retrieves the sequence name associated with a trigger.                                          |
 | `GET_triggers.sql`           | Returns all triggers associated with a table.                                                   |
@@ -50,10 +49,9 @@ The solution dynamically drops and recreates sequences and triggers in a loop us
 3.	Run the provided .sql files in the following order to set up the necessary functions and procedures:
     ```
 	1-  Validate_table_function.sql
-	2-  Check_seq.sql
-	3-  GET_triggers.sql
-	4-  GET_SEQUENCE.sql
-	5-  get_max_id.sql
+	2-  GET_triggers.sql
+	3-  GET_SEQUENCE.sql
+	4-  get_max_id.sql
 4.	Execute Anonymous_block.sql to automate the creation and management of sequences and triggers.
 
 ---
