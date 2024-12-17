@@ -35,7 +35,3 @@ BEGIN
     result:= GET_SEQ('SECURE_EMPLOYEES');
     DBMS_OUTPUT.PUT_LINE('the seq is ' || result);
 END;
-
-select SEQUENCE_NAME
-from user_sequences
-where SEQUENCE_NAME = ''
